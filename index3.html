@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="outer-slider">
+        <button id="scrollLeftButton" onclick="scrollSlider(-1)">&#10094;</button>
+        <div class="container">
+            <div class="inner-slider" id="gameList">
+                <!-- Dynamic content will be injected here -->
+            </div>
+        </div>
+        <button id="scrollRightButton" onclick="scrollSlider(1)">&#10095;</button>
+    </div>
+
+    <script>
+        const games = [
+            {
+                "Image": "image2/image-game/first.png",
+                "name": "first game",
+            },
+            {
+                "Image": "image2/image-game/game2.png",
+                "name": "two game",
+            },
+            {
+                "Image": "image2/image-game/game3.png",
+                "name": "three game",
+            },
+            {
+                "Image": "image2/image-game/game4.png",
+                "name": "four game",
+            },
+            {
+                "Image": "image2/image-game/game5.png",
+                "name": "five game",
+            },
+             {
+                "Image" : "image2/image-game/game6.png",
+                "name":"Six game", 
+             },
+             {
+                "Image" : "image2/image-game/game7.png",
+                "name": "seven game",
+             } ,
+             
+        ];
+
+        const gameListContainer = document.getElementById('gameList');
+
+        // Dynamically generate game items
+        games.forEach(game => {
+            const gameItem = document.createElement('div');
+            gameItem.classList.add('item-slider');
+
+            gameItem.innerHTML = `
+                <a href="gameview.html?image=${game.Image}">
+                    <img src="${game.Image}" alt="${game.name}">
+                    <p>${game.name}</p>
+                </a>
+            `;
+
+            gameListContainer.appendChild(gameItem);
+        });
+
+        // Example scrollSlider function (optional, if scrolling functionality is needed)
+        function scrollSlider(direction) {
+            const container = document.querySelector('.container');
+            container.scrollBy({ left: direction * 300, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>
