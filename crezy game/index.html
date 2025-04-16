@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="max-age=3600, must-revalidate">
+
+    <title>Crezy game</title>
+    <link rel="website icon" type="png" href="image/Untitled.png">
+    
+    <!-- Add this to your HTML head -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-item1">
+            <a href="javascript:void(0)" class="navigation" onclick="toggleSidebar()">
+                <img src="image/navigation.png" alt="Menu" style="filter: invert(1)">
+            </a>
+            <a href="#"><img src=" image/logo.png" alt="Logo"></a>
+        </div>
+        <div class="header-item2">
+            <div class="textbox">
+                <input type="text" class="search" placeholder="Search">
+                <img src="image/search.png" alt="Search Icon" class="search-button">
+            </div>
+        </div>
+        <div class="header-item3">
+            <button class="but"><img src="image2/group (1).png" alt="User" style="filter: invert(200%)"></button>
+            <button class="but"><img src="image2/notification.png" alt="Favorites" style="filter: invert(1);"></button>
+            <button class="but"> <img src="image2/heart.png" alt=" navigation" style="filter: invert(1)"></button>
+            <button class="login">Log in</button>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <ul class="sidebar-links">
+                    <li>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Home.png" alt=""> </a>
+                            <a href="#"><span class="text">Home</span></a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Recent.png" alt=""></a>
+                            <a href="#"><span class="text">Recently palyed</span></a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/New.png" alt=""></a>
+                            <a href="#"><span class="text">New</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Trending.png" alt=""></a>
+                            <a href="#"> <span class="text">Treading now</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Updated.png" alt=""></a>
+                            <a href="#"> <span class="text">Updated</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Originals.png" alt=""></a>
+                            <a href="#"><span class="text">originals</a>
+                        </div>
+                        <hr class="underline">
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/2players.png" alt=""></a>
+                            <a href="#"><span class="text"> 2 Player</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Action.png" alt=""></a>
+                            <a href="#"><span class="text">Action</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Adventure.png" alt=""></a>
+                            <a href="#"> <span class="text">Adventure</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Basketball.png" alt=""></a>
+                            <a href="#"><span class="text">basketball</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Beauty.png" alt=""></a>
+                            <a href="#"><span class="text">beauty</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Bike.png" alt=""></a>
+                            <a href="#"><span class="text">bike</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Car.png" alt=""></a>
+                            <a href="#"><span class="text">car</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Card.png" alt=""></a>
+                            <a href="#"><span class="text">card</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Casual.png" alt=""></a>
+                            <a href="#"><span class="text">causal</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Clicker.png" alt=""></a>
+                            <a href="#"><span class="text">clicker</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Controller.png" alt=""></a>
+                            <a href="#"><span class="text">controller</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/DressUp.png" alt=""></a>
+                            <a href="#"><span class="text">dress up</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Driving.png" alt=""></a>
+                            <a href="#"><span class="text">driving</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Escape.png" alt=""></a>
+                            <a href="#"><span class="text">Escape</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Flash.png" alt=""></a>
+                            <a href="#"><span class="text">flash</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/FPS.png" alt=""></a>
+                            <a href="#"><span class="text">fps</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Horror.png" alt=""></a>
+                            <a href="#"><span class="text">horror</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/io.png" alt=""></a>
+                            <a href="#"><span class="text">.io</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Mahjong.png" alt=""></a>
+                            <a href="#"><span class="text">mahjong</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Minecraft.png" alt=""></a>
+                            <a href="#"><span class="text">minecraft</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Multiplayer.png" alt=""></a>
+                            <a href="#"><span class="text">multiplayer</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Pool.png" alt=""></a>
+                            <a href="#"><span class="text">pool</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Puzzle.png" alt=""></a>
+                            <a href="#"><span class="text">puzzle</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image/lotus.png" alt=""></a>
+                            <a href="#"><span class="text">shooting</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Soccer.png" alt=""></a>
+                            <a href="#"><span class="text">soccers</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Mahjong.png" alt=""></a>
+                            <a href="#"><span class="text">mahjong</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Sports.png" alt=""></a>
+                            <a href="#"><span class="text">sports</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Stickman.png" alt=""></a>
+                            <a href="#"><span class="text">stickman</a>
+                        </div>
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/TowerDefense.png" alt=""></a>
+                            <a href="#"><span class="text">tower defence</a>
+                        </div>
+                        <hr class="underline">
+                        <div class="sub-class">
+                            <a href="#"><img src="image2/Tags.png" alt=""></a>
+                            <a href="#"><span class="text">tags</a>
+                        </div>
+                        <div class="sub-class">
+                            <button class="buttom">
+                                <img src="image2/email.png" alt="">
+                                <a href="#" ><span class="text">contact</span></a>
+                            </button>
+                        </div>
+
+
+                        <div class="sub-class">
+
+                            <select id="options" class="dropdown-list">
+
+                                <option value="language">English</option>
+                                <option value="about">Hindi</option>
+                                <option value="services">Gujarati</option>
+                                <option value="contact">Sanskrit</option>
+                            </select>
+                        </div>
+                        <div class="sub-class ">
+                            <div class="super">
+                                <a href="#"><span class="sub">About</span></a>
+                                <a href="#"><span class="sub">Developer</span></a>
+                                <a href="#"><span class="sub">Kids-site</span></a>
+                                <a href="#"><span class="sub">Job</span></a>
+                                <a href="#"><span class="sub">info for parents</span></a>
+                                <a href="#"><span class="sub">terms and conditions</span></a>
+                                <a href="#"><span class="sub">privacy</span></a>
+                                <a href="#"><span class="sub">all games </span></a>
+                            </div>
+                        </div>
+
+                        <div class="sub-class">
+                            <div class="social">
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/tik-tok.png" alt="TikTok"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/game.png" alt="Game"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/linkedin.png" alt="LinkedIn"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/twitter.png" alt="Twitter"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/youtube.png" alt="YouTube"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/playstore.png" alt="Play Store"></a>
+                                </div>
+                                <div class="sub-social">
+                                    <a href="#"><img src="image2/apple.png" alt="Apple"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-class">
+                            <span class="copy"> 2024 CrezyGames</span>
+                        </div>
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- start to body part  -->
+
+        <div class="main-block">
+            <div class="service-outer">
+                <div class="container">
+                    <div class="service-inner">
+                        <div class="item">
+                            <div class="item-inner">
+                                <img src="image2/crezy logo.png" alt="Logo" width="50px" height="50px">
+                                <strong>Welcome to <br> CrazyGames</strong>
+                            </div>
+                            <div class="item-inner">
+                                <img src="image2/out-of-the-box.png" alt="4000+ Games Logo" width="50px" height="50px">
+                                <span>4000+ games</span>
+                            </div>
+                            <div class="item-inner">
+                                <img src="image2/rocket.png" alt="No Install Needed Logo" width="50px" height="50px">
+                                <span>No install needed</span>
+                            </div>
+                            <div class="item-inner">
+                                <img src="image2/8830666.png" alt="Any Device Logo" width="50px" height="50px">
+                                <span>On any device</span>
+                            </div>
+                            <div class="item-inner">
+                                <img src="image2/2user.png" alt="Play With Friends Logo" width="50px" height="50px">
+                                <span>Play with friends</span>
+                            </div>
+                            <div class="item-inner">
+                                <img src="image2/stars-02.png" alt="Free Games Logo" width="50px" height="50px">
+                                <span>All for free</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer-slider">
+                <div class="inner-slider">
+                    <div id="category-container">
+                        <!-- Dynamically populated categories -->
+                    </div>
+                </div>
+            </div>
+            <div class="outer-four">
+                <div class="container">
+                    <div class="inner-four">
+                        <div class="item1-four">
+                            <div class="sub-head">
+                                <h1>Online Games at CrazyGames</h1>
+                                <p>CrazyGames features the latest and best free online games. You can enjoy playing
+                                    fun
+                                    games without interruptions from downloads, intrusive ads, or pop-ups. Just load
+                                    up your
+                                    favorite games instantly in your web browser and enjoy the experience.
+                                    <br>
+                                    <a href="#">Learn more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item2-four">
+                            <div class="prime-four">
+                                <div class="prime-list">
+                                    <button class="slider-btn-left1">
+                                        <i class="fa-solid fa-angle-left"></i>
+                                    </button>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/2players.png" alt="">
+                                                    <div class="image-list-text">2 player</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Action.png" alt="">
+                                                    <div class="image-list-text">Action</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Adventure.png" alt="">
+                                                    <div class="image-list-text">Adventure</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Basketball.png" alt="">
+                                                    <div class="image-list-text">Basketball</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Beauty.png" alt="">
+                                                    <div class="image-list-text">beauty</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Bike.png" alt="">
+                                                    <div class="image-list-text">bike</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Car.png" alt="">
+                                                    <div class="image-list-text">car</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Card.png" alt="">
+                                                    <div class="image-list-text">card</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Casual.png" alt="">
+                                                    <div class="image-list-text">causal</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Clicker.png" alt="">
+                                                    <div class="image-list-text">clicker</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Controller.png" alt="">
+                                                    <div class="image-list-text">controller</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/DressUp.png" alt="">
+                                                    <div class="image-list-text">dress up</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Driving.png" alt="">
+                                                    <div class="image-list-text">driving</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Escape.png" alt="">
+                                                    <div class="image-list-text">Escape</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Flash.png" alt="">
+                                                    <div class="image-list-text">flash</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/FPS.png" alt="">
+                                                    <div class="image-list-text">Escape</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/FPS.png" alt="">
+                                                    <div class="image-list-text">fps</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Horror.png" alt="">
+                                                    <div class="image-list-text">horror</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/io.png" alt="">
+                                                    <div class="image-list-text">.io</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Mahjong.png" alt="">
+                                                    <div class="image-list-text">mahjong</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Minecraft.png" alt="">
+                                                    <div class="image-list-text">minecraft</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Multiplayer.png" alt="">
+                                                    <div class="image-list-text">multiplayer</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Pool.png" alt="">
+                                                    <div class="image-list-text">pool</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Puzzle.png" alt="">
+                                                    <div class="image-list-text">puzzle</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image/lotus.png" alt="">
+                                                    <div class="image-list-text">shooting</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Soccer.png" alt="">
+                                                    <div class="image-list-text">soccers</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Mahjong.png" alt="">
+                                                    <div class="image-list-text">mahjong</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Sports.png" alt="">
+                                                    <div class="image-list-text">sports</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="prime-item">
+                                        <div>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/Stickman.png" alt="">
+                                                    <div class="image-list-text">stickman</div>
+                                                </div>
+                                            </a>
+                                            <a href="">
+                                                <div class="image-list">
+                                                    <img src="image2/TowerDefense.png" alt="">
+                                                    <div class="image-list-text">tower defence</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <button class="slider-btn-right2">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outer-third">
+                <div class="container">
+                    <div class="inner-third">
+                        <div id="category-container2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game-type-block" style="display: block;"></div>
+
+    <script src="data/data.js"></script>
+    <script src="data/data2.js"></script>
+    <script src="js/demo.js"></script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+
+    </script>
+</body>
+
+</html>
